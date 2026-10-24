@@ -9,10 +9,11 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: "Aplikasi Mahasiswa",
       debugShowCheckedModeBanner: false,
       home: MyHome(),
+      theme: ThemeData.dark(),
     );
   }
 }
@@ -23,12 +24,27 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("DASHBOARD MAHASISWA")),
+      appBar: AppBar(title: const Center(child: Text('APLIKASI MAHASISWA'))),
       body: Column(
         children: [
-          Center(child: Text("Dias Mayri")),
-          Center(child: Text("Dias Mayri")),
-          Center(child: Text("Dias Mayri")),
+          Center(
+            child: Text(
+              "Dias Mayri",
+              style: TextStyle(fontSize: 50, color: Color(0xFF202734)),
+            ),
+          ),
+          Center(
+            child: Text(
+              "TI24PSE3",
+              style: TextStyle(fontSize: 50, color: Color(0xFF202734)),
+            ),
+          ),
+          Center(
+            child: Text(
+              "1124160056",
+              style: TextStyle(fontSize: 50, color: Color(0xFF202734)),
+            ),
+          ),
         ],
       ),
     );
