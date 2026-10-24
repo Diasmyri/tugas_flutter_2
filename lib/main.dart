@@ -12,8 +12,7 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
       title: "Aplikasi Mahasiswa",
       debugShowCheckedModeBanner: false,
-      home: MyHome(),
-      theme: ThemeData.dark(),
+      home: const MyHome(),
     );
   }
 }
@@ -24,8 +23,8 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Center(child: Text('APLIKASI MAHASISWA'))),
-      body: Column(
+      appBar: AppBar(title: const Center(child: Text('DASHBOARD MAHASISWA'))),
+      body: const Column(
         children: [
           Center(
             child: Text(
